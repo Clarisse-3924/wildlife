@@ -65,23 +65,6 @@ public class Sightings {
         }
     }
 
-    public void delete(){
-        try (Connection con=DB.sql2o.open()){
-            String sql="DELETE FROM sightings WHERE id=:id";
-            con.createQuery(sql)
-                    .addParameter("id",this.id)
-                    .executeUpdate();
-        }
-
-    }
-    public static void deleteAll(){
-        try (Connection con=DB.sql2o.open()){
-            String sql="DELETE FROM sightings";
-            con.createQuery(sql)
-                    .executeUpdate();
-        }
-
-    }
 
     public void save(){
 
