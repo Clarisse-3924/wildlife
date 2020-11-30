@@ -10,7 +10,7 @@
                     <h3 id="color">Time</h3>
                     <hr>
                     {{#each sightings as |s|}}
-                        <h3>{{s.time}}</h3>
+                        <h3 id="color">{{s.time}}</h3>
                     {{/each}}
                 </div>
                 <div class="col-md-3">
@@ -23,7 +23,7 @@
                 </div>
 
             {{else}}
-                <h1>No sightings!! Create some <a href="/create/sighting">here</a> </h1>
+                <h1 id="color">No sightings!! Create some <a href="/create/sighting">here</a> </h1>
 
             {{/if}}
 
