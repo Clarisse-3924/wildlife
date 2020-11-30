@@ -12,7 +12,7 @@ public class Animals implements DatabaseManagement {
     public String type;
     private String health;
     private String age;
-    public static final String ANIMAL_TYPE="normal";
+    public static final String ANIMAL_TYPE="Canivore";
 
 
 
